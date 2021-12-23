@@ -1,0 +1,32 @@
+{
+  "name": "@creative-kit/functions",
+  "version": "0.1.0",
+  "scripts": {
+    "build": "tsc",
+    "serve": "yarn build && firebase emulators:start --only functions",
+    "shell": "yarn build && firebase functions:shell",
+    "start": "yarn shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log",
+    "run-script": "FIRESTORE_EMULATOR_HOST='localhost:8001' ts-node",
+    "run-script-auth": "FIREBASE_AUTH_EMULATOR_HOST='localhost:9099' FIRESTORE_EMULATOR_HOST='localhost:8001' ts-node"
+  },
+  "engines": {
+    "node": "14"
+  },
+  "main": "lib/src/index.js",
+  "dependencies": {
+    "@creative-kit/shared": "*",
+    "@types/lodash": "^4.14.172",
+    "firebase-admin": "^9.4.2",
+    "firebase-functions": "^3.13.1",
+    "lodash": "^4.17.21",
+    "papaparse": "^5.3.0",
+    "ulid": "^2.3.0"
+  },
+  "devDependencies": {
+    "@types/papaparse": "^5.2.4",
+    "ts-node": "^9.1.1"
+  },
+  "private": true
+}

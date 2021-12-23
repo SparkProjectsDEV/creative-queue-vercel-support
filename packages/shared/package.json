@@ -1,0 +1,13 @@
+{
+  "name": "@creative-kit/shared",
+  "version": "0.1.0",
+  "main": "dist",
+  "types": "dist/index.d.ts",
+  "dependencies": {
+    "date-fns": "^2.23.0",
+    "diacritic": "^0.0.2",
+    "firebase": "^8.10.0",
+    "firebase-admin": "^9.11.1",
+    "ulid": "^2.3.0"
+  }
+}

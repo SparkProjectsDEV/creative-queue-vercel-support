@@ -1,0 +1,38 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# Build outputs
+build
+dist
+*.tsbuildinfo
+
+# dependencies
+node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment Variables
+.env
+.env.build
+.vercel
+
+/firebase-debug.log
+/firestore-debug.log
+/ui-debug.log
+/test-data
+.eslintcache
+
+packages/functions-deploy

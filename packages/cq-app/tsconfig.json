@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "target": "es2015",
+    "downlevelIteration": true,
+    "importHelpers": true,
+    "allowJs": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "jsx": "react-jsx",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext",
+      "ES2015.Collection",
+      "ES2015.Iterable"
+    ],
+    "isolatedModules": true,
+    "noFallthroughCasesInSwitch": true,
+    "useDefineForClassFields": true,
+    "skipLibCheck": true,
+    "noEmit": true,
+    "baseUrl": "./src"
+  },
+  "include": [
+    "src"
+  ],
+  "references": [
+    { "path": "../shared" },
+  ]
+}
